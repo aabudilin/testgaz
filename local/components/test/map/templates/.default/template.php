@@ -1,11 +1,10 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 $this->setFrameMode(true);
-//print_r($arResult);
+$this->addExternalJS("https://api-maps.yandex.ru/2.1/?lang=ru-RU&apikey=".$arResult['KEY']);
 ?>
 
 <div id="fullmap" class="full-map"></div>
 
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&apikey=<?=$arResult['KEY']?>" type="text/javascript"></script>
 <script>
 
 let data = {
